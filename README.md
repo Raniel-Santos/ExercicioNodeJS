@@ -35,7 +35,7 @@ npm install
 <strong> 3. Rodar a aplicação:</strong>
 
 ```console
-nodemon index.js
+nodemon index.js ou node index.js
 ```
 <strong> 4. Abra o Navegador e insira:</strong>
 ```console
