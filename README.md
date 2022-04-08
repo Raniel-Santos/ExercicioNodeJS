@@ -26,7 +26,7 @@ Implantar esse sistema localmente:
 
 <strong> 1. Clonar o repositório </strong>
 
-<strong> 2. Abra a pasta e insira</strong> 
+<strong> 2. Abra a pasta e insira no terminal</strong> 
 
 ```console
 npm install
