@@ -17,20 +17,21 @@ app.get("/", (req, res) => {
 })
 
 app.post("/msg", async (req, res) => {
-    console.log(req.body)
-    const msg = {
-        
-        usuario_nome:req.body.nome,
+    
+    const msg = {        
+        usuario_nome:req.body.usuario_nome,
         email:req.body.email,
         telefone:req.body.telefone,
         pais:req.body.pais,
         mensagem:req.body.mensagem
+        
     }
+    console.log(msg)
+
     const user = await new Usuario(msg).save()
     const mensagens = await Usuario.findAll()
-    res.render('mensagem',{
-        
-        nome: user.nome,
+    res.render('mensagem',{        
+        usuario_nome: user.usuario_nome,
         telefone:user.telefone,
         email:user.email,
         pais:user.pais,
@@ -41,9 +42,8 @@ app.post("/msg", async (req, res) => {
 
 app.get('/msg', async (req,res)=>{
     const mensagens = await Usuario.findAll()
-    res.render('mensagem',{
-        
-        nome: '',
+    res.render('mensagem',{        
+        usuario_nome: '',
         telefone:'',
         email:'',
         pais:'',

@@ -36,7 +36,7 @@
 
             <h4>SUA MENSAGEM FOI ENVIADA AO MUNDO!!!</h4>
 
-            <p><strong>Seu Nome: </strong> <%=nome%></p>
+            <p><strong>Seu Nome: </strong> <%=usuario_nome%></p>
             <p><strong>Telefone:</strong>  <%=telefone%></p>
             <p><strong>Seu Email:</strong> <%=email%></p>
             <p><strong>Seu País:</strong> <%=pais%></p>
@@ -56,7 +56,7 @@
         <tbody>
             <% for(var i=0;i<mensagens.length;i++){ %>
             <tr>
-                <td><%= mensagens[i].usuario_nome %></td>
+                <td><%= mensagens[i].usuario_nome%></td>
                 <td><%= mensagens[i].telefone%></td>
                 <td><%= mensagens[i].email%></td>
                 <td><%= mensagens[i].pais%></td>
