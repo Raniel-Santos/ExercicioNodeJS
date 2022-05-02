@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagem enviada</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mensagem enviada</title>
 
-<style>
-    .box{
-        border: solid 2px rgb(255, 255, 255);
-        text-align: center;
-        
-    }
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    p{
-        font-size: 20pt;
-    }
+        <style>
+            .box{
+                border: solid 2px rgb(255, 255, 255);
+                text-align: center;
+                
+            }
 
+            p{
+                font-size: 16pt;
+            }
 
-</style>
+            .tabelaMsg{
+                margin-top: 3rem !important;
+                border: 2px solid black;
+                width: 90%;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
 
+    <body>
+        <div class="box">
 
-</head>
+            <h4>SUA MENSAGEM FOI ENVIADA AO MUNDO!!!</h4>
 
+            <p><strong>Seu Nome: </strong> <%=nome%></p>
+            <p><strong>Telefone:</strong>  <%=telefone%></p>
+            <p><strong>Seu Email:</strong> <%=email%></p>
+            <p><strong>Seu País:</strong> <%=pais%></p>
+            <p><strong>Sua Mensagem:</strong> <%=mensagem%></p>
+        </div>
 
+        <table class="centered striped tabelaMsg">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>País</th>
+                <th>Mensagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0;i<mensagens.length;i++){ %>
+            <tr>
+                <td><%= mensagens[i].usuario_nome %></td>
+                <td><%= mensagens[i].telefone%></td>
+                <td><%= mensagens[i].email%></td>
+                <td><%= mensagens[i].pais%></td>
+                <td><strong><%= mensagens[i].mensagem%></strong></td>
+            </tr>
+            <% } %>
+        </tbody>
+        </table>
 
-<body>
-
-
-    <div class="box">
-
-        <h2>SUA MENSAGEM FOI ENVIADA AO MUNDO!!!</h2>
-
-        <p><strong>Seu Nome: </strong> <%=nome%></p>
-        <p><strong>Telefone:</strong>  <%=telefone%></p>
-        <p><strong>Seu Email:</strong> <%=email%></p>
-        <p><strong>Seu País:</strong> <%=pais%></p>
-
-
-
-
-
-    </div>
-
-
-
-
-
-</body>
+    </body>
 </html>
