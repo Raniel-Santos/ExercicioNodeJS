@@ -33,8 +33,10 @@ Implantar esse sistema localmente:
 npm install
 ```
 
-<strong> 3. Abra o .env e coloque o nome do banco e senha: (sua senha) </strong>
-
+<strong> 3. Abra o .env e altere a senha (sua senha) no campo BD_SENHA:</strong>
+```console
+BD_SENHA = (INSIRA A SUA SENHA);
+```
 
 <strong> 4. Crie a DataBase no seu banco (PostgreSQL):</strong>
 
