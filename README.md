@@ -33,8 +33,10 @@ Implantar esse sistema localmente:
 npm install
 ```
 
-<strong> 3. Abra o .env e coloque o nome do banco e senha: (sua senha) </strong>
-
+<strong> 3. Abra o .env e altere a senha (sua senha) no campo BD_SENHA:</strong>
+```console
+BD_SENHA = (INSIRA A SUA SENHA);
+```
 
 <strong> 4. Crie a DataBase no seu banco (PostgreSQL):</strong>
 
@@ -51,7 +53,9 @@ nodemon index.js    ou    node index.js
 ```console
 localhost:5000
 ```
-<h1> Video da Aplicação </h1>
-    
+<h1> Demonstração da Aplicação</h1>
+
+    ![Ex DS WebII](https://user-images.githubusercontent.com/88641208/166338110-14f3fcb1-de93-4b46-85c8-0c3fef7b20b3.gif)
+
 
     
