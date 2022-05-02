@@ -55,7 +55,8 @@ localhost:5000
 ```
 <h1> Demonstração da Aplicação</h1>
 
-    ![Ex DS WebII](https://user-images.githubusercontent.com/88641208/166338110-14f3fcb1-de93-4b46-85c8-0c3fef7b20b3.gif)
+![](/video/Ex.DS.WebII.gif)
+    
 
 
     
