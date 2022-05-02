@@ -55,7 +55,7 @@ localhost:5000
 ```
 <h1> Demonstração da Aplicação</h1>
 
-
+![](/video/Ex.DS.WebII.gif)
     
 
 
