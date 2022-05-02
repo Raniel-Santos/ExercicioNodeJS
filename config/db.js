@@ -1,7 +1,12 @@
+//Import dotenv
+
+require ('dotenv').config()
+
+
 //Inicializando do Banco de Dados
 
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('exdsII', 'postgres', '112290',{
+const sequelize = new Sequelize(process.env.BD, 'postgres', process.env.BD_SENHA,{
     host: 'localhost',
     dialect: 'postgres',
     port: 5432
@@ -39,3 +44,6 @@ const Usuario = sequelize.define('usuarios',{
 Usuario.sync({force:true})
 
 module.exports = Usuario
+
+
+
