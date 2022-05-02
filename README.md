@@ -1,6 +1,6 @@
-<h1 align = "center" >Projeto de NodeJs com Express</h1>
+<h1 align = "center" >Projeto de NodeJs com Express e Sequelize</h1>
 
-<p align="center">Exercicio de NodeJS com Express - Criar duas rotas, a primeira rota será a tela principal e a outra uma aplicação qualquer em html. Usar Template Engine para a aplicação</p>
+<p align="center">Exercicio de NodeJS com Express - Criar duas rotas, a primeira rota será a tela principal e a outra uma aplicação qualquer em html. Usar Template Engine para a aplicação. Utilize o Sequelize para realizar a conexão com o banco de dados.</p>
 
 <h1 align="center">Desenvolvido por:</h1>
 
@@ -16,6 +16,7 @@
 * HTML 5;
 * CSS 3;
 * Materialize;
+* Sequelize.
 
 
 <h1> Tutorial de Utilização e Instalação da Aplicação </h1>
@@ -32,16 +33,25 @@ Implantar esse sistema localmente:
 npm install
 ```
 
-<strong> 3. Rodar a aplicação:</strong>
+<strong> 3. Abra o .env e coloque o nome do banco e senha: (sua senha) </strong>
+
+
+<strong> 4. Crie a DataBase no seu banco (PostgreSQL):</strong>
+
+```console
+CREATE DATABASE ExDSII;
+```
+
+<strong> 5. Rodar a aplicação:</strong>
 
 ```console
 nodemon index.js    ou    node index.js
 ```
-<strong> 4. Abra o Navegador e insira:</strong>
+<strong> 6. Abra o Navegador e insira:</strong>
 ```console
 localhost:5000
 ```
-
+<h1> Video da Aplicação </h1>
     
 
     
